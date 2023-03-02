@@ -1,0 +1,44 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  row-gap: 15px;
+  padding: 0.3rem;
+}
+
+.input {
+  padding: 0.5em;
+  position: relative;
+  outline: none;
+  transition: all 0.6s ease 0s;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+
+.input,
+label {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+label {
+  box-shadow: 2.5px 2px 3px gray, -1px 2px 3px gray;
+  padding: 0.5em;
+  border-radius: 15px;
+}
+
+.invalid {
+  border-color: red;
+}
+.input[type="tel"] {
+  width: 100%;
+}
+
+.phone__wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
