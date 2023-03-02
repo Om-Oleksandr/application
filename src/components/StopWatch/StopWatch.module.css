@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  background-color: darkmagenta;
+  padding: 3rem 0;
+  color: lavender;
+}
+
+.control__btn {
+  display: flex;
+  justify-content: space-around;
+  margin: initial;
+}
+
+.button {
+  border: none;
+  padding: 0.5rem 1rem;
+  color: darkmagenta;
+  background-color: lavender;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
