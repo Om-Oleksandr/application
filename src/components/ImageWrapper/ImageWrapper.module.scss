@@ -1,0 +1,12 @@
+.image__container {
+  overflow: hidden;
+  & img {
+    max-width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+}
+
+.scale {
+  transform: scale(1.1);
+}
