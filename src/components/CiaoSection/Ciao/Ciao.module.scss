@@ -1,0 +1,17 @@
+// @import './../../../common/styles/colors';
+@use "/src/common/styles/colors" as *;
+@use "/src/common/styles/templates" as *;
+.container {
+  @extend .flex-column;
+  background-color: $color-main;
+  color: $color-text;
+}
+
+.button {
+  @extend %oneline;
+  border-radius: 30px;
+  background-color: $color-main;
+  color: $color-text;
+  padding: 0.5rem 1rem;
+  border: none;
+}

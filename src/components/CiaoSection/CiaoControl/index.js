@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class CiaoControl extends Component {
   render() {
@@ -10,5 +11,17 @@ class CiaoControl extends Component {
     );
   }
 }
+
+CiaoControl.defaultProps = {
+  sortType: "none",
+  direction: false,
+  sortFunc: () => {},
+};
+
+CiaoControl.propTypes = {
+  sortType: PropTypes.string.isRequired,
+  direction: PropTypes.bool.isRequired,
+  sortFunc: PropTypes.func.isRequired,
+};
 
 export default CiaoControl;

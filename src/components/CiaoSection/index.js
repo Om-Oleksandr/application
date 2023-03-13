@@ -29,20 +29,6 @@ class CiaoSection extends Component {
       ],
     };
   }
-  // sortById = () => {
-  //   const { users, isDirectionGrowthById } = this.state;
-
-  //   const newUsers = [...users];
-  //   newUsers.sort((a, b) =>
-  //     isDirectionGrowthById ? a.id - b.id : b.id - a.id
-  //   );
-
-  //   // const newUsers = JSON.parse(JSON.stringify(users));
-  //   this.setState({
-  //     users: newUsers,
-  //     isDirectionGrowthById: !isDirectionGrowthById,
-  //   });
-  // };
 
   setNewState = (newUsers) => {
     this.setState({ users: newUsers });

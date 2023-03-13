@@ -28,12 +28,6 @@ class SignInForm extends Component {
 
   render() {
     const { email, password, emailValid, passwordValid } = this.state;
-    // const emailClassName = `${styles.input} ${
-    //   emailValid ? styles.valid : styles.invalid
-    // }`;
-    // const passClassName = `${styles.input} ${
-    //   passwordValid ? styles.valid : styles.invalid
-    // }`;
     const emailClassName = cx(styles.input, { [styles.invalid]: !emailValid });
     const passClassName = cx(styles.input, {
       [styles.invalid]: !passwordValid,

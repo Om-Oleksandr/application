@@ -44,8 +44,7 @@ class StopWatch extends Component {
   };
 
   componentDidMount() {
-    // this.start();
-    // console.log("didMount");
+    this.start();
   }
 
   componentDidUpdate() {
@@ -56,17 +55,15 @@ class StopWatch extends Component {
 
   componentWillUnmount() {
     this.stop();
-    // console.log("componentWillUnmount");
   }
 
   render() {
-    // console.log("render");
     const { time } = this.state;
     return (
       <article className={styles.container}>
         <h2>{time.toLocaleTimeString("en-GB")}</h2>
         <div className={styles.control__btn}>
-          <button className={styles.button} onClick={this.startTimeout}>
+          <button className={styles.button} onClick={this.start}>
             start
           </button>
           <button className={styles.button} onClick={this.stop}>

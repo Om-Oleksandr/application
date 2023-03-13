@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import CiaoControl from "./../CiaoControl/index";
 
 class CiaoControls extends Component {
@@ -10,7 +11,6 @@ class CiaoControls extends Component {
       isAlpabeticalFirstNameStart: true,
     };
   }
-
   sortById = () => {
     const { isDirectionGrowthById } = this.state;
     const { users, setNewState } = this.props;
@@ -84,5 +84,14 @@ class CiaoControls extends Component {
     );
   }
 }
+
+CiaoControls.propTypes = {
+  users: PropTypes.arrayOf({
+    id: PropTypes.number.isRequired,
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+  }),
+  setNewState: PropTypes.func.isRequired,
+};
 
 export default CiaoControls;

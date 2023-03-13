@@ -15,3 +15,7 @@
   color: darkcyan;
   border: 2px solid darkcyan;
 }
+
+.scale {
+  transform: scale(1.1);
+}

@@ -25,10 +25,6 @@ class FeedBackForm extends Component {
         name === "firstName"
           ? nameRegex.test(value)
           : numberRegex.test(Number.parseInt(value)),
-      // numberValid: numberRegex.test(Number.parseInt(value)),
-      // [name + "Valid"]: Number.isNaN(Number.parseInt(value))
-      //   ?
-      //   : ,
     });
     console.log(Number.parseInt(value));
   };
